@@ -24,6 +24,7 @@ These configs are Omarchy-based waybar themes with various customizations and pe
 - They use standard modules such as pacman updates, weather, mpris, and system information
 - All configurations are compatible with Hyprland and Omarchy environments
 - Most versions support dynamic theme colors and user customization
+- Easy one-command installation for each version
 
 </details>
 
@@ -80,6 +81,7 @@ This action:
 - Custom personalized Omarchy waybar configuration  
 - Includes weather, mpris, hyprland/window, pacman/update modules, and screenrecord button
 - Base design with essential functionality
+- Dynamic module support with system information display
 
 ##### v1 Install-command (copy and paste in your terminal):
 
@@ -87,13 +89,22 @@ This action:
 git clone https://github.com/Desplicableme/Omarchy-waybar-config-files.git /tmp/repo && cp -rf /tmp/repo/config/v1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
 
-<img src="https://github.com/Desplicableme/Omarchy-waybar-config-files/blob/main/Waybar-pics/v1.png?raw=true" alt="v1 Preview" width="100%" />
+<img width="2560" height="1440" alt="v1 Preview" src="https://github.com/Desplicableme/Omarchy-waybar-config-files/blob/main/Waybar-pics/1.png?raw=true" />
 
 ---
 
 ## Contributing
 
 Feel free to submit issues, fork this repository, and create pull requests for any improvements or new themes!
+
+## How to Contribute
+
+1. Fork this repository
+2. Create a new branch for your theme: `git checkout -b add-your-theme`
+3. Add your waybar configuration to `config/vX` folder
+4. Add a screenshot to `Waybar-pics/`
+5. Update the README with your theme details
+6. Submit a pull request
 
 ## License
 
@@ -102,8 +113,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Credits
 
 - **Omarchy**: Original base configuration and inspiration
-- **HANCORE-linux**: Repository structure and documentation style
+- **HANCORE-linux**: [waybar-themes](https://github.com/HANCORE-linux/waybar-themes) - Documentation and design style inspiration
+- **Community**: All contributors and theme creators
 
 ---
 
-**Last updated**: 2026-05-28
+**Last updated**: 2026-05-28  
+**Version**: 1.0.0
