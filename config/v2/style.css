@@ -1,0 +1,104 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    min-height: 0;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+window#waybar {
+    background: transparent;
+}
+
+/* ---------------- The Translucent Core ---------------- */
+.modules-left > widget > *,
+.modules-center > widget > *,
+.modules-right > widget > * {
+    background: rgba(30, 30, 46, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 99px;
+    padding: 0 14px;
+    margin: 0;
+}
+
+/* ---------------- Module Styling & Spacing ---------------- */
+#custom-omarchy { 
+    color: #f38ba8; 
+    font-size: 16px; 
+    padding: 0 16px; 
+}
+
+#custom-cava { 
+    color: #cba6f7; 
+    padding: 0 14px; 
+    font-family: "JetBrainsMono Nerd Font", monospace; 
+}
+
+#mpris { color: #f5c2e7; }
+#clock { color: #89b4fa; font-weight: 800; }
+#custom-updates { color: #fab387; }
+#custom-weather { color: #f9e2af; }
+
+#cpu { color: #cba6f7; padding: 0 15px; font-size: 14px; }
+#bluetooth { color: #89b4fa; padding: 0 15px; font-size: 14px; }
+#network { color: #a6e3a1; padding: 0 15px; font-size: 14px; }
+#idle_inhibitor { color: #f5c2e7; padding: 0 15px; font-size: 14px; }
+
+#pulseaudio { color: #89dceb; }
+#battery { color: #94e2d5; }
+
+#custom-power { 
+    color: #f38ba8; 
+    font-size: 15px;
+    padding: 0 16px; 
+}
+
+/* ---------------- Workspaces ---------------- */
+#workspaces {
+    padding: 0 4px;
+}
+
+#workspaces button {
+    color: rgba(205, 214, 244, 0.6);
+    margin: 4px 2px;
+    padding: 0 10px;
+    border-radius: 99px;
+    background: transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #cdd6f4;
+}
+
+#workspaces button.active {
+    color: #1e1e2e;
+    background: #f38ba8;
+}
+
+/* ---------------- Battery States ---------------- */
+#battery.charging,
+#battery.plugged {
+    color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+    color: #fab387;
+}
+
+#battery.critical:not(.charging) {
+    color: #1e1e2e;
+    background: #f38ba8;
+    animation: none;
+}
+
+/* ---------------- Hardware Drawer ---------------- */
+#group-hardware {
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+#group-hardware .hw-item {
+    margin-left: 8px;
+}
